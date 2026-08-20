@@ -1,173 +1,142 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="SEID: sistema web para diagnosticar la brecha digital en educación básica." />
-    <meta name="theme-color" content="#10263b" />
-    <title>SEID · Evaluación de Inclusión Digital</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Dirección visual: Aula Editorial — azul tinta, coral señal y composición editorial asimétrica. -->
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEID - Sistema de Evaluación de Inclusión Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <header class="site-header" id="inicio">
-      <div class="shell nav-wrap">
-        <a class="brand" href="#inicio" aria-label="SEID, volver al inicio">
-          <img src="/manus-storage/seid-logo_415750e6.png" data-fallback="assets/seid-logo.png" alt="" class="brand-mark" />
-          <span class="brand-name">SEID<span>.</span></span>
-        </a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir navegación">Menú</button>
-        <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
-          <a href="#problema">El problema</a>
-          <a href="#solucion">La solución</a>
-          <a href="#diagnostico">Diagnóstico</a>
-          <a href="#creditos" class="nav-cta">Ver proyecto <span aria-hidden="true">↗</span></a>
-        </nav>
-      </div>
+    <!-- Encabezado y Navegación Principal -->
+    <header class="navbar">
+        <div class="container flex-nav">
+            <div class="logo">SEID <span>| Aula Editorial</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#problema">El Problema</a></li>
+                    <li><a href="#dimensiones">Dimensiones</a></li>
+                    <li><a href="#solucion">La Solución</a></li>
+                    <li><a href="#simulador" class="btn-nav">Diagnóstico</a></li>
+                    <li><a href="#creditos">Créditos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main id="contenido">
-      <section class="hero section-dark" aria-labelledby="hero-title">
-        <div class="hero-noise" aria-hidden="true"></div>
-        <div class="shell hero-grid">
-          <div class="hero-copy reveal">
-            <p class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> Proyecto final · Tercer parcial</p>
-            <h1 id="hero-title">La brecha no empieza en la pantalla. <em>Empieza cuando falta una condición.</em></h1>
-            <p class="hero-lead">SEID convierte tres preguntas sencillas en una lectura clara del acceso digital de cada estudiante.</p>
-            <div class="hero-actions">
-              <a class="button button-coral" href="#diagnostico">Ejecutar diagnóstico <span aria-hidden="true">↗</span></a>
-              <a class="text-link light-link" href="#problema">Conocer el problema <span aria-hidden="true">↓</span></a>
-            </div>
-            <div class="hero-meta" aria-label="Resumen del proyecto">
-              <span><strong>01</strong> acceso</span>
-              <span><strong>02</strong> conexión</span>
-              <span><strong>03</strong> habilidades</span>
-            </div>
-          </div>
-          <div class="hero-art reveal reveal-delay" aria-label="Estudiantes usando dispositivos digitales en el aula">
-            <div class="art-frame">
-              <img src="/manus-storage/seid-hero_a97038ba.jpg" data-fallback="assets/seid-hero.jpg" alt="Ilustración editorial de estudiantes usando dispositivos digitales en el aula" />
-              <span class="art-stamp">diagnóstico<br /><strong>en contexto</strong></span>
-            </div>
-            <div class="art-caption"><span class="line"></span><span>Una herramienta para mirar antes de intervenir.</span></div>
-          </div>
+    <!-- Sección Inicio (Hero) -->
+    <section id="inicio" class="hero">
+        <div class="container text-center">
+            <h1>Sistema de Evaluación de Inclusión Digital</h1>
+            <p>Diagnóstico rápido y multidimensional para evaluar las condiciones tecnológicas en la educación básica.</p>
+            <a href="#simulador" class="btn-primary">Iniciar Simulador</a>
         </div>
-        <div class="hero-bottom" aria-hidden="true"><span>SEID · Sistema de Evaluación de Inclusión Digital</span><span>Universidad Tres Culturas · 2026-6</span></div>
-      </section>
+    </section>
 
-      <section class="intro section-cream" id="problema" aria-labelledby="problem-title">
-        <div class="shell intro-grid">
-          <div class="section-marker"><span>01</span><i></i><span>El punto de partida</span></div>
-          <div class="intro-copy reveal">
-            <p class="eyebrow">La situación</p>
-            <h2 id="problem-title">Tener tecnología no siempre significa poder aprender con ella.</h2>
-            <p class="large-copy">Después de la pandemia, la educación básica dejó una pregunta abierta: ¿quién tiene las condiciones para continuar aprendiendo en digital y quién se está quedando fuera?</p>
-            <p>La brecha digital aparece cuando una persona no cuenta con dispositivos, conectividad estable o las habilidades necesarias para aprovecharlos. Detectar la causa cambia la respuesta: no es lo mismo conseguir una computadora que acompañar un proceso de alfabetización.</p>
-          </div>
-          <div class="intro-note reveal reveal-delay">
-            <div class="quote-mark">“</div>
-            <p>Diagnosticar primero permite dirigir mejor los recursos escolares.</p>
-            <span class="note-rule"></span>
-            <small>Principio del proyecto</small>
-          </div>
+    <!-- Sección El Problema -->
+    <section id="problema" class="section">
+        <div class="container">
+            <h2>1. El Problema</h2>
+            <p>La brecha digital post-pandemia en la educación básica va más allá de la falta de computadoras. Contempla la inestabilidad de red y la falta de competencias digitales que provocan rezago escolar permanente.</p>
         </div>
-      </section>
+    </section>
 
-      <section class="dimensions section-paper" aria-labelledby="dimensions-title">
-        <div class="shell dimensions-grid">
-          <div class="dimensions-visual reveal">
-            <img src="/manus-storage/seid-dimensions_52a1c0b1.png" data-fallback="assets/seid-dimensions.png" alt="Ilustración de las tres dimensiones: dispositivo, conexión y habilidades" />
-            <p class="image-note">La inclusión digital se observa como un sistema: si una pieza falla, el aprendizaje pierde continuidad.</p>
-          </div>
-          <div class="dimensions-copy reveal reveal-delay">
-            <div class="dimensions-thread" aria-hidden="true"><span>entrada</span><i></i><span>condición</span><i></i><span>lectura</span></div>
-            <p class="eyebrow">Tres dimensiones</p>
-            <h2 id="dimensions-title">Una brecha, <em>tres puertas de entrada.</em></h2>
-            <div class="dimension-list">
-              <article class="dimension-item"><span class="dimension-number">01</span><div><h3>Acceso</h3><p>¿Existe una computadora o tableta disponible para estudiar?</p></div><span class="dimension-arrow" aria-hidden="true">↗</span></article>
-              <article class="dimension-item"><span class="dimension-number">02</span><div><h3>Conectividad</h3><p>¿La conexión permite consultar recursos y participar en clase?</p></div><span class="dimension-arrow" aria-hidden="true">↗</span></article>
-              <article class="dimension-item"><span class="dimension-number">03</span><div><h3>Habilidades</h3><p>¿La persona puede usar la tecnología con autonomía?</p></div><span class="dimension-arrow" aria-hidden="true">↗</span></article>
+    <!-- Sección Tres Dimensiones -->
+    <section id="dimensiones" class="section bg-alt">
+        <div class="container">
+            <h2>2. Las Tres Dimensiones de la Brecha Digital</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Acceso</h3>
+                    <p>Falta de hardware o dispositivos de cómputo funcionales en el hogar.</p>
+                </div>
+                <div class="card">
+                    <h3>Conectividad</h3>
+                    <p>Ausencia de infraestructura de red o conexiones estables a internet.</p>
+                </div>
+                <div class="card">
+                    <h3>Uso</h3>
+                    <p>Carencia de habilidades técnicas y alfabetización digital autónoma.</p>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="shell editorial-thread" aria-hidden="true"><span>problema</span><i></i><span>diagnóstico</span><i></i><span>acción</span></div>
-      </section>
+    </section>
 
-      <section class="solution section-dark" id="solucion" aria-labelledby="solution-title">
-        <div class="shell solution-top">
-          <div class="section-marker section-marker-dark"><span>02</span><i></i><span>La propuesta</span></div>
-          <div class="solution-heading reveal"><div class="brand-lockup"><img src="/manus-storage/seid-logo_415750e6.png" alt="" /><div><strong>SEID</strong><span>Herramienta pública de lectura digital</span></div></div><p class="eyebrow eyebrow-light">La solución tecnológica</p><h2 id="solution-title">Un diagnóstico breve para tomar <em>decisiones concretas.</em></h2></div>
+    <!-- Sección La Solución -->
+    <section id="solucion" class="section">
+        <div class="container">
+            <h2>3. La Solución Tecnológica</h2>
+            <p>El simulador SEID traduce variables de infraestructura y habilidades en un diagnóstico jerárquico inmediato, guiando a docentes y directores hacia soluciones focalizadas.</p>
         </div>
-        <div class="shell solution-body">
-          <div class="solution-copy reveal">
-            <p>El Sistema de Evaluación de Inclusión Digital —SEID— traduce respuestas cotidianas en una clasificación comprensible. El resultado no pretende etiquetar a un estudiante: busca orientar el apoyo que necesita una escuela.</p>
-            <a class="button button-outline" href="#diagnostico">Probar la herramienta <span aria-hidden="true">→</span></a>
-          </div>
-          <div class="process reveal reveal-delay" aria-label="Proceso del diagnóstico">
-            <div class="process-step"><span>01</span><strong>Responder</strong><small>tres preguntas</small></div>
-            <span class="process-line" aria-hidden="true"></span>
-            <div class="process-step"><span>02</span><strong>Clasificar</strong><small>la condición</small></div>
-            <span class="process-line" aria-hidden="true"></span>
-            <div class="process-step"><span>03</span><strong>Actuar</strong><small>con prioridad</small></div>
-          </div>
-        </div>
-        <div class="shell community-card reveal">
-          <img src="/manus-storage/seid-community_9c333f64.jpg" data-fallback="assets/seid-community.jpg" alt="Docentes y estudiantes revisando información para mejorar el acceso digital" />
-          <div class="community-copy"><p class="eyebrow eyebrow-light">¿Para quién?</p><h3>Directores, docentes y organismos que necesitan ver dónde apoyar.</h3><p>Una lectura común facilita solicitar recursos, diseñar alfabetización digital y acompañar a quienes más lo necesitan.</p></div>
-        </div>
-      </section>
+    </section>
 
-      <section class="diagnostic section-coral" id="diagnostico" aria-labelledby="diagnostic-title">
-        <div class="shell diagnostic-grid">
-          <div class="diagnostic-intro reveal">
-            <div class="section-marker section-marker-coral"><span>03</span><i></i><span>Ahora tú</span></div>
-            <div class="diagnostic-brand-mark"><img src="/manus-storage/seid-logo_415750e6.png" alt="" /><div><strong>SEID / 01</strong><span>Ficha de lectura digital</span></div></div>
-            <p class="eyebrow">Simulador SEID</p>
-            <h2 id="diagnostic-title">Haz visible la condición digital de tu contexto.</h2>
-            <p>Responde con datos de ejemplo o utiliza el formulario como prototipo para explicar cómo funcionaría la solución en una escuela.</p>
-            <div class="diagnostic-tip"><span class="tip-icon">i</span><p><strong>Nota de privacidad.</strong> Este prototipo procesa la información en tu navegador. No guarda ni envía tus respuestas.</p></div>
-            <div class="diagnostic-stat-strip" aria-label="Resumen de la evaluación"><div><strong>03</strong><span>preguntas</span></div><div><strong>04</strong><span>estados</span></div><div><strong>01</strong><span>siguiente paso</span></div></div>
-          </div>
-          <div class="diagnostic-card reveal reveal-delay">
-            <div class="card-topline"><span>Ficha de evaluación</span><span>SEID / 01</span></div>
-            <form id="diagnostic-form" novalidate>
-              <div class="field-group"><label for="user-name">Tu nombre <span>(opcional)</span></label><input id="user-name" name="user-name" type="text" placeholder="Escribe tu nombre" autocomplete="name" /></div>
-              <fieldset class="field-group"><legend>¿Cuentas con un dispositivo?</legend><div class="choice-row"><label class="choice"><input type="radio" name="device" value="si" /><span class="choice-box">Sí</span></label><label class="choice"><input type="radio" name="device" value="no" /><span class="choice-box">No</span></label></div></fieldset>
-              <fieldset class="field-group"><legend>¿Tienes conexión estable a internet?</legend><div class="choice-row"><label class="choice"><input type="radio" name="internet" value="si" /><span class="choice-box">Sí</span></label><label class="choice"><input type="radio" name="internet" value="no" /><span class="choice-box">No</span></label></div></fieldset>
-              <div class="field-group"><label for="skills">Nivel de habilidades digitales <output id="skills-output" for="skills">5</output><span class="scale-label"> / 10</span></label><input id="skills" name="skills" type="range" min="1" max="10" value="5" /></div>
-              <p class="form-error" id="form-error" role="alert" hidden>Selecciona una respuesta en cada pregunta para continuar.</p>
-              <button class="button button-dark full-button" type="submit">Ver mi diagnóstico <span aria-hidden="true">↗</span></button>
+    <!-- Sección Diagnóstico (Simulador Interactivo) -->
+    <section id="simulador" class="section bg-alt">
+        <div class="container">
+            <h2>4. Simulador de Diagnóstico Digital</h2>
+            
+            <!-- Contenedor del Formulario -->
+            <form id="diagnostic-form" class="simulador-card">
+                
+                <!-- Pregunta 1: Dispositivo -->
+                <div class="form-group">
+                    <label>1. ¿El estudiante cuenta con un dispositivo de cómputo o tableta funcional?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="device" value="si"> Sí</label>
+                        <label><input type="radio" name="device" value="no"> No</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 2: Internet -->
+                <div class="form-group">
+                    <label>2. ¿Cuenta con conexión estable a internet para actividades académicas?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="internet" value="si"> Sí</label>
+                        <label><input type="radio" name="internet" value="no"> No</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 3: Habilidades -->
+                <div class="form-group">
+                    <label for="skills">3. Nivel de habilidades digitales del estudiante (1 al 10):</label>
+                    <input type="range" id="skills" name="skills" min="1" max="10" value="5" oninput="this.nextElementSibling.value = this.value">
+                    <output>5</output>
+                </div>
+
+                <!-- Alerta Visual de Campos Vacíos -->
+                <div id="alert-msg" class="alert hidden">Por favor, responde todas las preguntas obligatorias antes de continuar.</div>
+
+                <button type="submit" class="btn-submit">Procesar Diagnóstico</button>
             </form>
-            <div class="result-panel" id="result-panel" aria-live="polite" hidden>
-              <div class="result-kicker"><span class="result-dot"></span> Resultado del diagnóstico</div>
-              <h3 id="result-title">Tu resultado aparecerá aquí.</h3>
-              <p id="result-description"></p>
-              <div class="result-next"><span>Siguiente paso</span><strong id="result-action"></strong></div>
-              <button class="reset-link" type="button" id="reset-diagnostic">Repetir diagnóstico <span aria-hidden="true">↻</span></button>
+
+            <!-- Contenedor de Resultados (Oculto inicialmente) -->
+            <div id="result-card" class="simulador-card hidden">
+                <h3 id="result-title">Resultado del Diagnóstico</h3>
+                <p id="result-desc"></p>
+                <div id="result-action" class="action-box"></div>
+                <button id="btn-reset" class="btn-primary" style="margin-top: 15px;">Realizar Nueva Evaluación</button>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <section class="closing section-cream" aria-labelledby="closing-title">
-        <div class="shell closing-grid">
-          <div class="closing-mark" aria-hidden="true"><img src="/manus-storage/seid-logo_415750e6.png" alt="" /></div>
-          <div class="closing-copy reveal"><p class="eyebrow">Una herramienta, una conversación</p><h2 id="closing-title">Cerrar la brecha empieza por <em>hacerla visible.</em></h2><p>SEID nace de un algoritmo sencillo y se convierte en una página que cualquier persona puede entender, probar y explicar.</p></div>
-          <a class="button button-coral dark-button" href="#diagnostico">Volver al diagnóstico <span aria-hidden="true">↑</span></a>
+    <!-- Sección Créditos e Información Institucional -->
+    <section id="creditos" class="section">
+        <div class="container">
+            <h2>Créditos Institucionales</h2>
+            <p><strong>Universidad Tres Culturas "Toreo"</strong> | Grupo: 6SLEINSCMA (Cuatrimestre 2026-6)</p>
+            <p><strong>Asignatura:</strong> Innovación y Tecnologías de la Información</p>
+            <p><strong>Docente:</strong> Angel Uriel Morales Cardoso</p>
+            <p><strong>Integrantes:</strong></p>
+            <ul>
+                <li>Fernando Ivan Zuiga Ramirez (Matrícula: 250145607)</li>
+                <li>Cruz Fuentes Bryan Fernando (Matrícula: 250148246)</li>
+                <li>Jimenez Cartagena Enrique Ramses (Matrícula: 250155660)</li>
+            </ul>
         </div>
-      </section>
-    </main>
+    </section>
 
-    <footer class="site-footer section-dark" id="creditos">
-      <div class="shell footer-top"><div class="footer-brand"><a class="brand brand-light" href="#inicio"><img src="/manus-storage/seid-logo_415750e6.png" data-fallback="assets/seid-logo.png" alt="" class="brand-mark" /><span class="brand-name">SEID<span>.</span></span></a><p>Sistema de Evaluación de Inclusión Digital</p></div><div class="footer-meta"><p><strong>Proyecto Integrador · Tercer Parcial</strong><br />Innovación y Tecnologías de la Información</p><p>Universidad Tres Culturas “Toreo”<br />Grupo 6SLEINSCMA · Cuatrimestre 2026-6</p></div></div>
-      <div class="shell footer-bottom"><span>Fernando Ivan Zuiga Ramirez · Cruz Fuentes Bryan Fernando · Jimenez Cartagena Enrique Ramses</span><span>Docente: Angel Uriel Morales Cardoso</span></div>
-    </footer>
-
-    <script type="module" src="script.js"></script>
-  </body>
+    <!-- Enlace al Archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>
